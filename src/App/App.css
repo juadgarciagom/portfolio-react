@@ -1,0 +1,211 @@
+@import "~bootstrap/dist/css/bootstrap";
+
+.backImg {
+    background-image: url('../assets/img/1.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 45rem;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.navi {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+.bg-light {
+    background-color: #2354aa;
+}
+
+.heroCont {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: grid;
+    grid-template-columns: 32rem auto;
+    grid-template-rows: 4rem 7rem 5rem;
+    grid-template-areas: "hero-title" "hero-cont" "hero-links";
+    grid-auto-flow: row;
+}
+
+.heroCont h1 {
+    grid-area: hero-title;
+}
+
+.heroCont p {
+    grid-area: hero-cont;
+}
+
+.hero-links {
+    grid-area: hero-links;
+    justify-self: flex-end;
+}
+
+.hero-links a {
+    color:  #0c2e69;
+    margin-right: 20px;
+}
+
+.hero-links a:hover {
+    color: #2354aa;
+}
+
+.hero-links a svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.sectionBack {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color:#0c2e69;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.test {
+    border: 1px solid;
+    height: 300px;
+    position: relative;
+}
+
+.portfolioProject {
+    height: 300px;
+    position: relative;
+}
+
+.portfolioProject:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+.portfolioProject::before {
+    content: "";
+      background-image: url('../assets/img/8.JPG');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      
+}
+
+.portfolioProject:hover::before {
+    opacity: 0.3;
+}
+
+.portfolioProject h4 {
+    position: absolute;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 20px;
+    opacity: 0;
+}
+
+.portfolioProject:hover h4 {
+    opacity: 100;
+}
+
+.cardText {
+    position: absolute;
+    top: 30%;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 10px;
+}
+
+.portfolioProject:hover .cardText {
+    opacity: 100;
+}
+
+.portfolioProject button {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    opacity: 0;
+    
+}
+
+.portfolioProject:hover button {
+    opacity: 100;
+}
+
+
+
+.container .row {
+    padding-top: 50px;
+}
+
+.aboutSection {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.aboutText {
+    text-align: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.resumeCV {
+    text-align: right;
+}
+
+.skillsCont {
+    padding: 0 20px;
+}
+
+.skillsImg {
+    text-align: right;
+}
+
+.skillImg {
+    width: 100px;
+    height: auto;
+}
+
+.skillImg2 {
+    width: 150px;
+    height: auto;
+}
+
+.inputsContact {
+    margin: 50px;
+    text-align: center;
+}
+
+.inputName {
+    width: 40%;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.inputMail {
+    width: 40%;
+    margin-left: 20px;
+    height: 35px;
+}
+
+textarea {
+    width: 80%;
+    margin: 0px 7rem;
+    height: 50vh;
+    border: 0px;
+}
+
+.submitButton {
+    margin: 30px 100px;
+    float: right;
+}

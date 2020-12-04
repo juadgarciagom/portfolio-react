@@ -1,42 +1,50 @@
 import React from 'react'
-import { Button, Col, Image, Row } from 'react-bootstrap'
+import { Button, Container, Row } from 'react-bootstrap'
+
 
 
 export const ProjectsCard = () => {
     return (
-        <div className="container">
-            <Row>
-                <Col>
+        <div className="projectsImg">
+            <Container>
+                <Row>
+
                     <div className="portfolioProject">
                         <h4>Portafolio</h4>
                         <div className="cardText">
                             <p>Portafolio construido con reactjs, basado en functional components e implementando react-bootstrap</p>
                         </div>
                         <div>
-                            <Button>Ver código</Button>
+                            <Button variant="secondary">Ver código</Button>
                         </div>
                     </div>
-                </Col>
-                <Col>
+
+
+                    <div className="gifProject">
+                        <h4>GifExpertApp</h4>
+                        <div className="cardText">
+                            <p>Buscador de gifs construido con reactjs, basado en functional components haciendo uso de la API de Giphy,
+                                guardando sus favoritos y visualizando en tiempo real los trending gifs</p>
+                        </div>
+                        <div>
+                            <Button variant="secondary">Ver código</Button>
+                        </div>
+                    </div>
+
                     <div className="test"></div>
-                </Col>
-                <Col>
+
+
+                </Row>
+                <Row>
+
                     <div className="test"></div>
-                </Col>
-                
-            </Row>
-            <Row>
-                <Col>
+
                     <div className="test"></div>
-                </Col>
-                <Col>
+
                     <div className="test"></div>
-                </Col>
-                <Col>
-                    <div className="test"></div>
-                </Col>
-                
-            </Row>
+
+                </Row>
+            </Container>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { AboutSkills } from '../components/AboutSkills'
 
 export const About = () => {
     return (
-        <div className="container title">
+        <div className="container title" id="aboutSection">
             <h1>About</h1>
             <div className="aboutSection">
                 <AboutMe />

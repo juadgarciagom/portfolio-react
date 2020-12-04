@@ -1,12 +1,12 @@
 import React from 'react'
-import { ContactText } from '../components/ContactText'
+import { ContactInputs } from '../components/ContactInputs'
 import { ContactTitle } from '../components/ContactTitle'
 
 export const Contact = () => {
     return (
-        <div className="sectionBack">
+        <div className="sectionBack" id="contactSection">
             <ContactTitle />
-            <ContactText />
+            <ContactInputs />
         </div>
     )
 }

@@ -1,5 +1,23 @@
 @import "~bootstrap/dist/css/bootstrap";
 
+/*-------------
+*Navbar section
+--------------*/
+
+.navi {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.bg-light {
+    background-color: #2354aa;
+}
+
+/*-------------
+*Hero section
+--------------*/
+
 .backImg {
     background-image: url('../assets/img/1.png');
     background-repeat: no-repeat;
@@ -9,39 +27,16 @@
     height: 100vh;
 }
 
-.navi {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    
-}
-
-.bg-light {
-    background-color: #2354aa;
-}
-
 .heroCont {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    display: grid;
-    grid-template-columns: 32rem auto;
-    grid-template-rows: 4rem 7rem 5rem;
-    grid-template-areas: "hero-title" "hero-cont" "hero-links";
-    grid-auto-flow: row;
-}
-
-.heroCont h1 {
-    grid-area: hero-title;
-}
-
-.heroCont p {
-    grid-area: hero-cont;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%
 }
 
 .hero-links {
-    grid-area: hero-links;
-    justify-self: flex-end;
+    text-align: end;
 }
 
 .hero-links a {
@@ -57,6 +52,10 @@
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/*----------------
+*Projects section
+-----------------*/
 
 .sectionBack {
     margin-top: 50px;
@@ -76,13 +75,15 @@
     position: relative;
 }
 
-.portfolioProject {
+.portfolioProject, .gifProject {
+    width: 300px;
     height: 300px;
     position: relative;
+    margin: 15px;
 }
 
-.portfolioProject:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+.portfolioProject, .gifProject:hover {
+    background-color: #0f3a83
     
 }
 
@@ -95,11 +96,10 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      
 }
 
 .portfolioProject:hover::before {
-    opacity: 0.3;
+    opacity: 0.15;
 }
 
 .portfolioProject h4 {
@@ -114,15 +114,6 @@
 
 .portfolioProject:hover h4 {
     opacity: 100;
-}
-
-.cardText {
-    position: absolute;
-    top: 30%;
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 10px;
 }
 
 .portfolioProject:hover .cardText {
@@ -141,11 +132,67 @@
     opacity: 100;
 }
 
+.gifProject::before {
+    content: "";
+      background-image: url('../assets/img/9.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+}
 
+.gifProject:hover::before {
+    opacity: 0.15;
+}
+
+.gifProject h4 {
+    position: absolute;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+    font-style: italic;
+    padding: 0 20px;
+    opacity: 0;
+}
+
+.gifProject:hover h4 {
+    opacity: 100;
+}
+
+.gifProject:hover .cardText {
+    opacity: 100;
+}
+
+.gifProject button {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    opacity: 0;
+    
+}
+
+.gifProject:hover button {
+    opacity: 100;
+}
+
+.cardText {
+    position: absolute;
+    top: 20%;
+    color: rgb(195, 195, 195);
+    opacity: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 10px;
+}
 
 .container .row {
     padding-top: 50px;
 }
+
+/*-------------
+*About section
+--------------*/
 
 .aboutSection {
     display: flex;
@@ -155,7 +202,7 @@
 
 .aboutText {
     text-align: left;
-    width: 50%;
+    max-width: 50%;
     padding: 0 20px;
 }
 
@@ -164,22 +211,21 @@
 }
 
 .skillsCont {
-    padding: 0 20px;
-}
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-.skillsImg {
-    text-align: right;
 }
 
 .skillImg {
-    width: 100px;
+    width: 100%;
     height: auto;
 }
 
-.skillImg2 {
-    width: 150px;
-    height: auto;
-}
+/*-------------
+*Contact section
+--------------*/
 
 .inputsContact {
     margin: 50px;
@@ -200,7 +246,7 @@
 
 textarea {
     width: 80%;
-    margin: 0px 7rem;
+    margin: 15px;
     height: 50vh;
     border: 0px;
 }
@@ -208,4 +254,23 @@ textarea {
 .submitButton {
     margin: 30px 100px;
     float: right;
+}
+
+.imgContainer {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    justify-content: center;
+}
+
+.test {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
 }

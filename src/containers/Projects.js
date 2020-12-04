@@ -4,7 +4,7 @@ import { ProjectTitle } from '../components/ProjectTitle'
 
 export const Projects = () => {
     return (
-        <div className="sectionBack">
+        <div className="sectionBack" id="projectsSection">
             <ProjectTitle />
             <ProjectsCard />
         </div>

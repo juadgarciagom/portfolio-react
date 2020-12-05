@@ -1,11 +1,11 @@
 import React from 'react'
-import { SkillsImgs } from './SkillsImgs'
+import { AboutSkillsImgs } from './AboutSkillsImgs'
 
 export const AboutSkills = () => {
     return (
         <div className="skillsCont">
-            <h4>Technical Skills</h4>
-            <SkillsImgs />
+            <h4>Tecnologías</h4>
+            <AboutSkillsImgs />
         </div>
     )
 }

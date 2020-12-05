@@ -15,7 +15,7 @@ export const ProjectsCard = () => {
                             <p>Portafolio construido con reactjs, basado en functional components e implementando react-bootstrap</p>
                         </div>
                         <div>
-                            <Button variant="secondary">Ver código</Button>
+                            <Button variant="secondary" target="_blank" href="https://github.com/juadgarciagom/portfolio-react">Ver código</Button>
                         </div>
                     </div>
 
@@ -27,11 +27,23 @@ export const ProjectsCard = () => {
                                 guardando sus favoritos y visualizando en tiempo real los trending gifs</p>
                         </div>
                         <div>
-                            <Button variant="secondary">Ver código</Button>
+                            <Button variant="secondary" target="_blank" href="https://github.com/juadgarciagom/gif-searcher">Ver código</Button>
+                            <Button className="liveButton" target="_blank" href="https://juadgarciagom.github.io/gif-searcher/">Ver en linea</Button>
+
                         </div>
                     </div>
 
-                    <div className="test"></div>
+                    <div className="restProject">
+                        <h4>RESTAPI</h4>
+                        <div className="cardText">
+                            <p>API REST construida con base en un café donde podemos añadir a una base de datos de mongo DB productos,
+                                usuarios y categorias. Con autenticación de JWT y google sign-in. Pruebas echas en postman  
+                            </p>
+                        </div>
+                        <div>
+                            <Button variant="secondary" target="_blank" href="https://github.com/juadgarciagom/rest-server-cafe">Ver código</Button>
+                        </div>
+                    </div>
 
 
                 </Row>

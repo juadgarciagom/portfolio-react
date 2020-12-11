@@ -338,19 +338,19 @@ body {
 
 .inputName {
     width: 40%;
-    margin-right: 20px;
+    margin-right: 25px;
     height: 35px;
 }
 
 .inputMail {
     width: 40%;
-    margin-left: 20px;
+    margin-left: 25px;
     height: 35px;
 }
 
 textarea {
-    width: 80%;
-    margin: 15px;
+    width: 85%;
+    margin: 25px;
     height: 50vh;
     border: 0px;
 }

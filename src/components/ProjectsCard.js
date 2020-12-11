@@ -47,7 +47,7 @@ export const ProjectsCard = () => {
 
 
                 </Row>
-                <Row>
+                {/* <Row>
 
                     <div className="test"></div>
 
@@ -55,7 +55,7 @@ export const ProjectsCard = () => {
 
                     <div className="test"></div>
 
-                </Row>
+                </Row> */}
             </Container>
         </div>
     )
